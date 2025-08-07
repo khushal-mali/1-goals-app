@@ -17,6 +17,7 @@ const GoalInput = ({ addGoalHandler, showModal, closeModal }) => {
     if (!enteredGoalText.trim()) return;
     addGoalHandler(enteredGoalText);
     setEnteredGoalText("");
+    closeModal();
   };
 
   return (
